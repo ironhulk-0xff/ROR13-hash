@@ -6,9 +6,9 @@ Feed it a list of Windows API function names, and it gives you their ROR13 hashe
 
 **Why bother?**
 
-- No strings attached — Your shellcode never contains strings like "LoadLibraryA" or "CreateProcessA". Static analysis and signature-based detection have nothing obvious to latch onto.
-- Smaller payload — A 4-byte hash takes up way less space than a full function name, which matters when you're squeezing shellcode into tight buffers.
-- It just works — ROR13 is fast, trivial to implement in assembly, and collision rates are low enough within a single DLL's export table that you won't run into trouble.
+- No strings attached: Your shellcode never contains strings like "LoadLibraryA" or "CreateProcessA". Static analysis and signature-based detection have nothing obvious to latch onto.
+- Smaller payload: A 4-byte hash takes up way less space than a full function name, which matters when you're squeezing shellcode into tight buffers.
+- It just works: ROR13 is fast, trivial to implement in assembly, and collision rates are low enough within a single DLL's export table that you won't run into trouble.
 
 Edit the functions list in the script to include whatever API calls your shellcode needs, then copy the output hashes into your assembly or C payload. **You need to add the resolve code**
 

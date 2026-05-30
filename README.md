@@ -13,18 +13,18 @@ Feed it a list of Windows API function names, and it spits out their ROR13 hashe
 Edit the functions list in the script to include whatever API calls your shellcode needs, then copy the output hashes into your assembly or C payload. **You need to add the resolve code**
 
 **Example output**
-Function                       Hash
+`Function                       Hash`
 ----------------------------------------
-LoadLibraryA              0xEC0E4E8E
-GetProcAddress            0x7C0DFCAA
-WinExec                   0x0E8AFE98
-ExitProcess               0x73E2D87E
-CreateProcessA            0x16B3FE72
-VirtualAlloc              0x91AFCA54
-VirtualProtect            0x7946C61B
-CreateThread              0x73E2D87E
-WriteProcessMemory        0xD83D6AA1
-OpenProcess               0xEF4F288E
+`LoadLibraryA              0xEC0E4E8E`
+`GetProcAddress            0x7C0DFCAA`
+`WinExec                   0x0E8AFE98`
+`ExitProcess               0x73E2D87E`
+`CreateProcessA            0x16B3FE72`
+`VirtualAlloc              0x91AFCA54`
+`VirtualProtect            0x7946C61B`
+`CreateThread              0x73E2D87E`
+`WriteProcessMemory        0xD83D6AA1`
+`OpenProcess               0xEF4F288E`
 
 
 **Heads up:**

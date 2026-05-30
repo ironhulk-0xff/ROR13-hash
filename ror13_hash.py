@@ -19,17 +19,11 @@ functions = [
     "WinExec",
     "ExitProcess",
     "CreateProcessA",
-    "WSAStartup",
-    "WSASocketA",
-    "connect",
-    "closesocket",
     "VirtualAlloc",
     "VirtualProtect",
     "CreateThread",
     "WriteProcessMemory",
     "OpenProcess",
-    "recv",
-    "send",
 ]
 
 print(f"{'Function':<25} {'Hash':>12}")

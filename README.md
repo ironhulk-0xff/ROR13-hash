@@ -2,7 +2,7 @@
 A tiny Python script that computes ROR13 hashes for Windows API function names. Use this when writing position-independent shellcode that needs to resolve API calls dynamically without leaving suspicious strings in the binary.
 
 **What it does:**
-Feed it a list of Windows API function names, and it spits out their ROR13 hashes, then embed those hashes in your shellcode instead of the raw strings. At runtime, your shellcode walks the PEB to find loaded modules, parses their export tables, hashes each function name, and compares it against the pre-computed values.
+Feed it a list of Windows API function names, and it gives you their ROR13 hashes; then embed those hashes in your shellcode instead of the raw strings. At runtime, your shellcode walks the PEB to find loaded modules, parses their export tables, hashes each function name, and compares it against the pre-computed values.
 
 **Why bother?**
 
